@@ -3,7 +3,7 @@ A warioware-like made for the brackeys game jam 2023.1
 
 *WARNING: Terrible code 0_o*
 
-## How two compiel code:
+## How two compiel code
 1. install haxe at [haxe.org](https://haxe.org/)
 2. install libraries with haxelib
 
