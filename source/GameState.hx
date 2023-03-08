@@ -128,9 +128,15 @@ class GameState extends FlxState {
 		var soundtimer = new FlxTimer();
 
 		soundtimer.start(0.5, function(t:FlxTimer) {
+			#if neko
+			if (hasWon) {
+				FlxG.sound.play("assets/sounds/win.wav");
+			}
+			#else
 			if (hasWon) {
 				FlxG.sound.play("assets/sounds/win.mp3");
 			}
+			#end
 		}, 1);
 		
 	}
