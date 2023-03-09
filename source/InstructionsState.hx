@@ -6,6 +6,7 @@ import flixel.FlxSprite;
 import flixel.text.FlxText;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.util.FlxTimer;
+import flixel.input.gamepad.FlxGamepad;
 
 class InstructionsState extends FlxState {
 
@@ -17,6 +18,8 @@ class InstructionsState extends FlxState {
 	{
 		super.create();
 
+		var gamepad:FlxGamepad = FlxG.gamepads.lastActive;
+
 		e = new FlxSprite(0,0);
 	    e.frames = FlxAtlasFrames.fromSparrow('assets/images/door.png', 'assets/images/door.xml');
 	    e.animation.addByPrefix('doorshut', 'doorshut', 24, false);
@@ -24,7 +27,12 @@ class InstructionsState extends FlxState {
 	    add(e);
 
 		doors = new FlxSprite(0,0);
-	    doors.loadGraphic("assets/images/Mouse_Left_Key_Dark.png");
+		if (gamepad == null) {
+			doors.loadGraphic("assets/images/Mouse_Left_Key_Dark.png");
+		}else {
+			doors.loadGraphic("assets/images/ps4.png");
+		}
+	    
 	    doors.screenCenter();
 	    doors.y -= 60;
 	    add(doors);
@@ -45,6 +53,15 @@ class InstructionsState extends FlxState {
 	{
 		super.update(elapsed);
 		
+		var gamepad:FlxGamepad = FlxG.gamepads.lastActive;
+		if (gamepad == null) {
+			doors.loadGraphic("assets/images/Mouse_Left_Key_Dark.png");
+		}else {
+			doors.loadGraphic("assets/images/ps4.png");
+		}
+
+		doors.screenCenter();
+	    doors.y -= 60;
 		
 	}
 }
