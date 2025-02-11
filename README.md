@@ -3,9 +3,9 @@ A warioware-like made for the brackeys game jam 2023.1
 
 *WARNING: Terrible code 0_o*
 
-here is the [itch.io](https://notsostudio.itch.io/spirited-away) page btw
+This is on [itch.io](https://notsostudio.itch.io/spirited-away)
 
-# How two compiel code
+# How to compile
 1. install haxe at [haxe.org](https://haxe.org/)
 2. install libraries with haxelib
 
@@ -17,27 +17,9 @@ haxelib install openfl
 haxelib install flixel
 haxelib install flixel-addons
 haxelib install flixel-ui
-
-if there is anything I am missing make a commit and add it in
 ```
-3. compile the darn thing
-
+3. compile and run
 ```
-still in cmd or terminal
-
-lime build [html5, windows (needs visual studio), linux, mac]
+lime test [html5, windows (needs visual studio), linux, mac]
 ```
-4. have funz
 
-# I WANT TO MOD IT LIKE FUNNY BLUE PENIS AND BALLZ DANCE DEMON GAMEuhuhhiuhuhuihggygdgygrgygdyrgdygyrdgdgr
-I will make a tut on that soon (hopefully)
-
-# Stupid and uneeded QNA
-
-## DiD YoU HaCk NiNjAmUfFiN To Get His GaMe EnGiNe
-No, it's publicly available on [haxeflixel.com](https://haxeflixel.com/)
-
-## Why do the graphics look so BAD
-They where made in flash 8 and converted to sprite sheets with shoebox (you can get it at https://renderhjs.net/shoebox/)
-
-I will maybe add more here soon lol
